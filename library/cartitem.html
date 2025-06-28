@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookx - BookBasket</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="main.js" defer></script>
+    <link rel="web Icon" href="./assets/images/header/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar container">
+      <div class="navbar__right">
+        <div class="navbar__icons">
+          <a href="./index.html" class="navbar__icon">
+            صفحه اصلی<i class="fas fa-home" style="color: #a16601"></i>
+          </a>
+
+          <!-- <a href="./cartitem.html" class="navbar__icon" id="cart-count">
+            کتابخانه من <span id="cart-number">۰</span>
+            <i class="fas fa-shopping-cart" style="color: #a16601"></i>
+          </a> -->
+        </div>
+
+        <!-- Side Menu -->
+        <div class="navbar__hamburger" id="hamburgerBtn">
+          <img
+            src="./assets/images/header/more.svg"
+            alt="Menu"
+            class="navbar__hamburger-icon"
+          />
+        </div>
+      </div>
+
+      <div class="navbar__logo">
+        <img src="./assets/images/header/logo.svg" alt="" />
+      </div>
+    </header>
+
+    <div class="cart-page container">
+      <div class="cart__right">
+        <div class="steps">
+          <div class="step">
+            <i class="fas fa-shopping-cart"></i>
+            سبد خرید
+          </div>
+          <div class="step">
+            <i class="fas fa-map-marker-alt"></i>
+            اطلاعات ارسال
+          </div>
+          <div class="step">
+            <i class="fas fa-credit-card"></i>
+            ثبت نهایی
+          </div>
+        </div>
+        <div class="progress-bar"></div>
+
+        <div class="summary">
+          <h3>قیمت نهایی</h3>
+          <div class="summary__price">۶,۰۰۰,۰۰۰ ریال</div>
+          <div class="summary__actions">
+            <button class="primary">تکمیل خرید</button>
+            <button class="secondary">ادامه‌ی سفارش</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart__left">
+        <div class="cart-list">
+          <div class="cart-list__header">
+            <span>تصویر</span>
+            <span>کالا</span>
+            <span>نویسنده</span>
+            <span>تعداد</span>
+            <span>قیمت واحد</span>
+            <span>حذف محصول</span>
+          </div>
+          <ul id="cart"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__top container">
+        <div class="footer__logo-social">
+          <div class="footer__socials">
+            <a href="#" class="social-icon"><span>in</span></a>
+            <a href="#" class="social-icon"><span>tw</span></a>
+            <a href="#" class="social-icon"><span>fb</span></a>
+          </div>
+          <div class="footer__logo">
+            <img src="./assets/images/header/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer__columns">
+          <div class="footer__col">
+            <ul class="footer__list">
+              <li><a href="#">درباره ما</a></li>
+              <li><a href="#">فروشگاه‌های همکار</a></li>
+              <li><a href="#">ارتباط با ما</a></li>
+              <li><a href="#">راهنمای خرید</a></li>
+              <li><a href="#">سوالات متداول</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">نظر، انتقاد، پیشنهاد...</h4>
+            <form class="footer__form">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="footer__input"
+              />
+              <button class="footer__button">ثبت</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <div class="footer__address">آدرس: تهران، خیابان انقلاب...</div>
+        <div class="footer__certs">
+          <img src="./assets/images/footer/meli.png" alt="cert" />
+          <img src="./assets/images/footer/namad.png" alt="cert" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
