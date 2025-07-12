@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookx - BookBasket</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <link rel="web icon" href="./assets/images/header/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__main container">
+        <div class="header__right">
+          <button class="header__menu">
+            <img
+              src="./assets/images/icon/menu.svg"
+              alt="menu"
+              class="header__menu-icon"
+            />
+          </button>
+          <img
+            src="./assets/images/header/logo.svg"
+            alt="logo"
+            class="header__logo"
+          />
+          <div class="header__search">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="جست‌وجو کتاب، نویسنده، مترجم..."
+            />
+            <button class="header__search-button">
+              <img
+                src="./assets/images/icon/search.svg"
+                alt="جستجو"
+                class="header__search-icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="header__left">
+          <button class="header__button header__login">
+            <img
+              src="./assets/images/icon/user.svg"
+              alt="login"
+              class="header__icon"
+            />
+            <span class="header__text">ورود به حساب کاربری</span>
+          </button>
+          <button class="header__button header__cart">
+            <span id="cart-number">۰</span>
+            <img
+              src="./assets/images/icon/bag.svg"
+              alt="card"
+              class="header__icon"
+              id="cart-count"
+            />
+          </button>
+        </div>
+      </div>
+
+      <nav class="header__navbar navbar">
+        <div class="navbar__row container">
+          <div class="navbar__links">
+            <a href="./index.html" class="navbar__link">
+              <img
+                src="./assets/images/icon/home.svg"
+                alt=""
+                class="navbar__link-icon"
+              />
+              خانه
+            </a>
+            <a href="#" class="navbar__link">
+              <img
+                src="./assets/images/icon/category.svg"
+                alt=""
+                class="navbar__link-icon"
+              />
+              دسته بندی‌ها
+            </a>
+            <a href="#" class="navbar__link">
+              <img
+                src="./assets/images/icon/book.svg"
+                alt=""
+                class="navbar__link-icon"
+              />
+              معرفی کتاب
+            </a>
+            <a href="#" class="navbar__link">
+              <img
+                src="./assets/images/icon/blog.svg"
+                alt=""
+                class="navbar__link-icon"
+              />
+              وبلاگ
+            </a>
+          </div>
+          <a href="#" class="navbar__install">
+            <img
+              src="./assets/images/icon/mobile.svg"
+              alt="اپلیکیشن"
+              class="navbar__install-icon"
+            />
+            نصب اپلیکیشن
+          </a>
+        </div>
+      </nav>
+
+      <!-- BACKDROP -->
+      <div class="header__backdrop" id="menuBackdrop"></div>
+
+      <!-- MOBILE MENU -->
+      <div class="header__mobile-menu" id="mobileMenu">
+        <img
+          src="./assets/images/header/logo.svg"
+          alt="کتابنوا"
+          width="70px"
+          height="auto"
+        />
+        <button class="header__close" id="closeMenu">
+          <img
+            src="./assets/images/icon/close.svg"
+            alt="close"
+            class="header__close-icon"
+          />
+        </button>
+
+        <nav class="mobile-navbar">
+          <div class="mobile-navbar__section">
+            <a href="#" class="mobile-navbar__install">
+              <img
+                src="./assets/images/icon/mobile.svg"
+                alt=""
+                class="mobile-navbar__install-icon"
+              />
+              <span>نصب اپلیکیشن</span>
+            </a>
+          </div>
+          <div class="mobile-navbar__section">
+            <a href="#" class="mobile-navbar__link">
+              <img
+                src="./assets/images/icon/home.svg"
+                alt=""
+                class="mobile-navbar__link-icon"
+              />
+              خانه
+            </a>
+            <a href="#" class="mobile-navbar__link">
+              <img
+                src="./assets/images/icon/category.svg"
+                alt=""
+                class="mobile-navbar__link-icon"
+              />
+              دسته بندی‌ها
+            </a>
+            <a href="#" class="mobile-navbar__link">
+              <img
+                src="./assets/images/icon/book.svg"
+                alt=""
+                class="mobile-navbar__link-icon"
+              />
+              معرفی کتاب
+            </a>
+            <a href="#" class="mobile-navbar__link">
+              <img
+                src="./assets/images/icon/blog.svg"
+                alt=""
+                class="mobile-navbar__link-icon"
+              />
+              وبلاگ
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="cart-page container">
+      <div class="cart__right">
+        <div class="steps">
+          <div class="step">
+            <i class="fas fa-shopping-cart"></i>
+            سبد خرید
+          </div>
+          <div class="step">
+            <i class="fas fa-map-marker-alt"></i>
+            اطلاعات ارسال
+          </div>
+          <div class="step">
+            <i class="fas fa-credit-card"></i>
+            ثبت نهایی
+          </div>
+        </div>
+        <div class="progress-bar"></div>
+
+        <div class="summary">
+          <h3>قیمت نهایی</h3>
+          <div class="summary__price">۶,۰۰۰,۰۰۰ ریال</div>
+          <div class="summary__actions">
+            <button class="primary">تکمیل خرید</button>
+            <button class="secondary">ادامه‌ی سفارش</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart__left">
+        <div class="cart-list">
+          <div class="cart-list__header">
+            <span>تصویر</span>
+            <span>کالا</span>
+            <span>نویسنده</span>
+            <span>تعداد</span>
+            <span>قیمت واحد</span>
+            <span>حذف محصول</span>
+          </div>
+          <ul id="cart"></ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__bottom">
+        <div class="footer__column footer__column--about">
+          <img
+            src="./assets/images/header/logo.svg"
+            class="footer__logo"
+            alt="logo"
+          />
+          <p class="footer__description">
+            فروشگاه اینترنتی جایی برای خرید آنلاین و دانلود کتاب صوتی و
+            الکترونیکی است. در کتاب‌فروشی آنلاین طاقچه هزاران کتاب خوب و
+            الکترونیکی در دسترس است که در میان آن‌ها کتاب رایگان هم وجود دارد.
+            شما می‌توانید کتاب‌ها را خریداری کرده یا امانت بگیرید و در اپلیکیشن،
+            تبلیغات، یا سایت بخوانید و بشنوید.
+          </p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__subtitle">کتاب های پیشنهادی</h4>
+          <ul class="footer__list">
+            <li>ابره شاه</li>
+            <li>ساتنو</li>
+            <li>خاطرات یک ساحر</li>
+            <li>وقتی اثر هنری بودم</li>
+            <li>ذهن حواس جمع</li>
+            <li>داستان نویسی</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__subtitle">دسته بندی پیشنهادی</h4>
+          <ul class="footer__list">
+            <li>رمان عاشقانه</li>
+            <li>کتاب‌های صوتی</li>
+            <li>کتاب‌های الکترونیکی</li>
+            <li>کتاب‌های فیزیکی</li>
+            <li>کتاب صوتی رایگان</li>
+            <li>کتاب‌های انگیزشی</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__subtitle">وبلاگ</h4>
+          <ul class="footer__list">
+            <li>معرفی کتاب جنگ و صلح</li>
+            <li>معرفی کتاب جزء از کل</li>
+            <li>معرفی کتاب دایی جان ناپلئون</li>
+            <li>معرفی کتاب قلعه حیوانات</li>
+            <li>معرفی رمان سووشون</li>
+            <li>معرفی کتاب تئوری انتخاب</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
